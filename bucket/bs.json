@@ -6,16 +6,16 @@
   "//5": "JensrudJ/scoop-burnedsecret, bucket/bs.json). Users then install with:",
   "//6": "  scoop bucket add burnedsecret https://github.com/JensrudJ/scoop-burnedsecret",
   "//7": "  scoop install bs",
-  "//8": "Placeholders: 1.0.3 (no cli-v prefix), https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v1.0.3/bs-windows-x86_64.zip (release",
-  "//9": ".zip download URL), dc855957f17d4a8ac905cd62c65fe14678cd9558b94d608593861803006927ae (zip sha256).",
-  "version": "1.0.3",
+  "//8": "Placeholders: 1.0.4 (no cli-v prefix), https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v1.0.4/bs-windows-x86_64.zip (release",
+  "//9": ".zip download URL), e3abb00b37140e742e034b86f68a699357383150740f0a181ba6734a80de921e (zip sha256).",
+  "version": "1.0.4",
   "description": "Command-line interface for the burnedsecret.com zero-knowledge secrets API",
   "homepage": "https://burnedsecret.com",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v1.0.3/bs-windows-x86_64.zip",
-      "hash": "dc855957f17d4a8ac905cd62c65fe14678cd9558b94d608593861803006927ae",
+      "url": "https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v1.0.4/bs-windows-x86_64.zip",
+      "hash": "e3abb00b37140e742e034b86f68a699357383150740f0a181ba6734a80de921e",
       "bin": "bs.exe"
     }
   },
