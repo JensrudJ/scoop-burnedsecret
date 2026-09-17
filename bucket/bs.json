@@ -1,0 +1,36 @@
+{
+  "//": "Scoop manifest TEMPLATE for the `bs` CLI (Phase 11, D-03). This is a",
+  "//2": "template, not a working manifest. The cli Codemagic release job fills",
+  "//3": "the {{PLACEHOLDERS}} from the Windows GitHub release asset and pushes",
+  "//4": "the rendered manifest to the Scoop bucket repo (user_setup item:",
+  "//5": "JensrudJ/scoop-burnedsecret, bucket/bs.json). Users then install with:",
+  "//6": "  scoop bucket add burnedsecret https://github.com/JensrudJ/scoop-burnedsecret",
+  "//7": "  scoop install bs",
+  "//8": "Placeholders: 1.0.2 (no cli-v prefix), https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v1.0.2/bs-windows-x86_64.zip (release",
+  "//9": ".zip download URL), 8d1e763b3a58480333ddee9ae06f590828f042df8dfba397e3ca6128ac80ab53 (zip sha256).",
+  "version": "1.0.2",
+  "description": "Command-line interface for the burnedsecret.com zero-knowledge secrets API",
+  "homepage": "https://burnedsecret.com",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v1.0.2/bs-windows-x86_64.zip",
+      "hash": "8d1e763b3a58480333ddee9ae06f590828f042df8dfba397e3ca6128ac80ab53",
+      "bin": "bs.exe"
+    }
+  },
+  "checkver": {
+    "github": "https://github.com/JensrudJ/burnedsecret-releases",
+    "regex": "cli-v([\\d.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/JensrudJ/burnedsecret-releases/releases/download/cli-v$version/bs-windows-x86_64.zip"
+      }
+    },
+    "hash": {
+      "url": "$url.sha256"
+    }
+  }
+}
